@@ -13,6 +13,15 @@ body {
     width: 100vw;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+}
+
 .wellcome {
     height: 60vh;
     display: flex;
@@ -358,16 +367,7 @@ section:nth-child(odd) {
     box-shadow: 9px 9px 16px 0px rgba(0, 0, 0, 0.25);
 }
 
-footer {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    line-height: 100px;
-    background-color: #f5f5f5;
-    z-index: 100;
-    text-align: center;
-}
+
 .item-box-features {
     display: flex;
     flex-direction: column;
@@ -427,97 +427,41 @@ footer {
     background-color: rgba(0,0,0,0.8);
     
 }
-
-/* footer section*/
-/* .footer_section {
-background-color: #222831;
-color: #ffffff;
-padding: 75px 0 40px 0;
-text-align: center;
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
 }
 
-.footer_section h4 {
-font-size: 28px;
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: w; /* Ensure content wraps on smaller screens */
+    padding: 0 0px; /* Add some padding to the sides */
 }
 
-.footer_section h4,
-.footer_section .footer-logo {
-font-weight: 600;
-margin-bottom: 20px;
-font-family: 'Dancing Script', cursive;
+footer .col-md-6 {
+    flex: 1; /* Allow columns to grow and shrink equally */
+    min-width: 500px; /* Ensure columns don't get too small */
+    margin: 10px 0; /* Add some margin for spacing */
 }
 
-.footer_section p {
-color: #dbdbdb;
+footer p {
+    margin: 0;
+    color: #6c757d;
 }
 
-.footer_section .footer-col {
-margin-bottom: 30px;
+footer .text-right {
+    text-align: right;
 }
 
-.footer_section .footer_contact .contact_link_box {
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-orient: vertical;
--webkit-box-direction: normal;
-    -ms-flex-direction: column;
-        flex-direction: column;
-}
-
-.footer_section .footer_contact .contact_link_box a {
-margin: 5px 0;
-color: #ffffff;
-}
-
-.footer_section .footer_contact .contact_link_box a i {
-margin-right: 5px;
-}
-
-.footer_section .footer_contact .contact_link_box a:hover {
-color: #ffbe33;
-}
-
-.footer_section .footer-logo {
-display: block;
-font-weight: bold;
-font-size: 38px;
-line-height: 1;
-color: #ffffff;
-}
-
-.footer_section .footer_social {
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-pack: center;
-    -ms-flex-pack: center;
+@media (min-width: 768px) {
+    footer .kvk-btw {
+        display: flex;
         justify-content: center;
-margin-top: 20px;
-margin-bottom: 10px;
+        gap: 20px; /* Add some space between the items */
+    }
 }
 
-.footer_section .footer_social a {
-
-}
-.fa fa-instagram {
-color: #ffbe33;
-}
-
-.footer_section .footer_social a:hover {
-color: #ffbe33;
-}
-
-.footer_section .footer-info {
-text-align: center;
-margin-top: 25px;
-}
-
-.footer_section .footer-info p {
-color: #ffffff;
-margin: 0;
-}
-
-.footer_section .footer-info p a {
-color: inherit;
-} */
